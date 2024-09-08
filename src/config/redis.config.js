@@ -5,6 +5,9 @@ exports.connectRedis = async (req, res) => {
   try {
     const redisClient = createClient({
       url: process.env.REDIS_URL,
+      socket: {
+        connectTimeout: 10000, // Timeout in milliseconds (10 seconds)
+    }
     });
 
     redisClient.on("error", (err) => console.log("Redis client error:", err));

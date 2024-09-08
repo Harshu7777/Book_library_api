@@ -1,6 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
+const connectDB = require('./src/config/db');
 const morgan = require('morgan');
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
@@ -55,10 +55,10 @@ app.get('/', (req, res) => {
 });
 
 // Routes
-app.use('/api/users', require('./routes/userRoutes'));
-app.use('/api/books', require('./routes/bookRoutes'));
-app.use('/api/orders', require('./routes/orderRouter'));
-app.use('/api/reviews', require('./routes/reviewRoutes'));
+app.use('/api/users', require('./src/routes/userRoutes'));
+app.use('/api/books', require('./src/routes/bookRoutes'));
+app.use('/api/orders', require('./src/routes/orderRouter'));
+app.use('/api/reviews', require('./src/routes/reviewRoutes'));
 
 // Start server
 const port = process.env.PORT || 5000;
