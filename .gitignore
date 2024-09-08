@@ -1,0 +1,58 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Redis dump files
+dump.rdb
+dump-*.rdb
+appendonly.aof
+
+# Environment variables
+.env
+
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Mac system files
+.DS_Store
+
+# Debugging/Profiling files
+*.swp
+.vscode/
+
+# Coverage directory used by testing frameworks
+coverage/
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# IDE specific files (e.g., IntelliJ)
+.idea/
+
+# Output directories for transpilation/compilation
+dist/
+build/
+
+# Miscellaneous
+*.pid
+*.pid.lock
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Optional lock files
+package-lock.json
+yarn.lock
+.pnpm-lock.yaml
